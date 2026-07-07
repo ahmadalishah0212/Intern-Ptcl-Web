@@ -1,0 +1,303 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:#eeeeee;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+
+}
+
+
+
+.container{
+
+    width:900px;
+    height:580px;
+    background:white;
+    display:flex;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+
+
+
+.left{
+
+    width:45%;
+
+}
+
+.left img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+
+
+.right{
+
+    width:55%;
+    padding:40px;
+    text-align:center;
+
+}
+
+.logo{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:15px;
+
+}
+
+.logo img{
+
+    width:60px;
+    height:60px;
+    object-fit:contain;
+
+}
+
+.right h2{
+
+    margin-bottom:10px;
+
+}
+
+.right p{
+
+    color:gray;
+    font-size:14px;
+    margin-bottom:20px;
+
+}
+
+
+
+.tabs{
+
+    display:flex;
+    margin-bottom:20px;
+
+}
+
+.tabs button{
+
+    width:50%;
+    padding:12px;
+    border:none;
+    cursor:pointer;
+    background:#f3f3f3;
+    font-size:15px;
+
+}
+
+.tabs .active{
+
+    background:#c8102e;
+    color:white;
+
+}
+
+
+
+input{
+
+    width:100%;
+    padding:13px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-bottom:15px;
+    font-size:15px;
+
+}
+
+
+/* Password */
+
+.passwordBox{
+
+    position:relative;
+
+}
+
+.passwordBox i{
+
+    position:absolute;
+    right:15px;
+    top:15px;
+    color:gray;
+    cursor:pointer;
+
+}
+
+
+
+.loginBtn{
+
+    width:100%;
+    padding:13px;
+    border:none;
+    background:#2fc810;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+
+}
+
+.loginBtn:hover{
+
+    background:#9d0d25;
+
+}
+
+
+
+.bottom{
+
+    margin-top:20px;
+
+}
+
+.bottom a{
+
+    text-decoration:none;
+    color:#c8102e;
+    font-weight:bold;
+
+}
+
+
+
+
+#popup{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:999;
+
+}
+
+.popupContent{
+
+    background:white;
+    width:320px;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+
+    animation:popup .3s;
+
+}
+
+.popupContent i{
+
+    color:green;
+    font-size:60px;
+    margin-bottom:15px;
+
+}
+
+.popupContent h3{
+
+    margin-bottom:10px;
+
+}
+
+.popupContent p{
+
+    margin-bottom:20px;
+    color:gray;
+
+}
+
+.popupContent button{
+
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#c8102e;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+
+}
+
+.popupContent button:hover{
+
+    background:#9d0d25;
+
+}
+
+
+@keyframes popup{
+
+    from{
+
+        transform:scale(.7);
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+        opacity:1;
+
+    }
+
+}
+
+
+
+
+@media(max-width:900px){
+
+.container{
+
+    width:95%;
+    height:auto;
+    flex-direction:column;
+
+}
+
+.left{
+
+    width:100%;
+    height:250px;
+
+}
+
+.right{
+
+    width:100%;
+
+}
+
+}

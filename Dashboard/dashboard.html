@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PTCL Dashboard</title>
+
+    <link rel="icon" type="image/png" href="../images/ptcl-logo.png">
+
+    <link rel="stylesheet" href="./dashboard.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <img src="../images/ptcl-logo.png">
+
+        <h2>PTCL</h2>
+
+    </div>
+
+    <ul>
+
+        <li class="active">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </li>
+
+        <li>
+            <i class="fa-solid fa-users"></i>
+            Users
+        </li>
+
+        <li>
+            <i class="fa-solid fa-chart-line"></i>
+            Reports
+        </li>
+
+        <li>
+            <i class="fa-solid fa-gear"></i>
+            Settings
+        </li>
+
+        <li onclick="logout()">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="main">
+
+    <div class="topbar">
+
+        <div class="leftTop">
+
+            <i class="fa-solid fa-bars menu"></i>
+
+            <h2>Dashboard</h2>
+
+        </div>
+
+        <div class="rightTop">
+
+            <div class="search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                type="text"
+                placeholder="Search">
+
+            </div>
+
+            <i class="fa-regular fa-bell notification"></i>
+
+            <div class="profile">
+
+                <img src="../images/profile.png">
+
+                <span id="username">User</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card blue">
+
+            <h1>150</h1>
+
+            <p>New Orders</p>
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+        </div>
+
+        <div class="card green">
+
+            <h1>53%</h1>
+
+            <p>Bounce Rate</p>
+
+            <i class="fa-solid fa-chart-column"></i>
+
+        </div>
+
+        <div class="card yellow">
+
+            <h1>44</h1>
+
+            <p>User Registrations</p>
+
+            <i class="fa-solid fa-user-plus"></i>
+
+        </div>
+
+        <div class="card red">
+
+            <h1>65</h1>
+
+            <p>Unique Visitors</p>
+
+            <i class="fa-solid fa-chart-pie"></i>
+
+        </div>
+
+    </div>
+
+
+    <div class="content">
+
+        <div class="chart">
+
+            <h3>Sales Overview</h3>
+
+            <canvas id="salesChart"></canvas>
+
+        </div>
+
+        <div class="map">
+
+            <h3>World Activity</h3>
+
+            <img src="../images/world-map.png">
+
+        </div>
+
+    </div>
+
+
+    <div class="tableBox">
+
+        <h3>Recent Activities</h3>
+
+        <table>
+
+            <tr>
+
+                <th>Name</th>
+
+                <th>Department</th>
+
+                <th>Status</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Ali Khan</td>
+
+                <td>Networking</td>
+
+                <td><span class="done">Completed</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Ahmed Shah</td>
+
+                <td>Software</td>
+
+                <td><span class="progress">In Progress</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Hamza</td>
+
+                <td>Support</td>
+
+                <td><span class="pending">Pending</span></td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="./dashboard.js"></script>
+
+</body>
+</html>
