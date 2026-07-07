@@ -138,7 +138,7 @@ function closePopup(){
 
     if(success){
 
-        window.location.href="../dashboard/dashboard.html";
+        window.location.href="../Dashboard/dashboard.html";
 
     }
 
@@ -149,6 +149,6 @@ function closePopup(){
 
 function goRegister(){
 
-       window.location.href="../register/register.html";
+       window.location.href="../Register/register.html";
 
 }
