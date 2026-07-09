@@ -16,7 +16,7 @@ body{
 
 .sidebar{
 
-    width:250px;
+    width:260px;
     height:100vh;
     background:#343a40;
     color:white;
@@ -89,11 +89,24 @@ body{
 
 .main{
 
-    margin-left:250px;
-    width:calc(100% - 250px);
+    margin-left:260px;
+    width:calc(100% - 260px);
 
 }
 
+.sidebar.close{
+    width:80px;
+    left: -250px;
+}
+
+.sidebar.close h2{
+    display:none;
+}
+
+.main.expand{
+    margin-left:0px;
+    width:calc(100% - 80px);
+}
 /* Top Bar */
 
 .topbar{
@@ -376,7 +389,7 @@ td{
 
 }
 
-.progress{
+.inprogress{
 
     background:#ffc107;
     color:black;
@@ -431,9 +444,12 @@ td{
 }
 
 .sidebar li{
-
     text-align:center;
-
+    padding:18px 0;
+}
+.sidebar li i{
+    display:block;
+    margin-bottom:5px;
 }
 
 .sidebar li i{
@@ -461,4 +477,42 @@ td{
 
 }
 
+}
+@media(max-width:700px){
+
+.card h1{
+    font-size:28px;
+}
+
+.card p{
+    font-size:14px;
+}
+
+.card i{
+    font-size:45px;
+}
+}
+@media(max-width:700px){
+
+.card h1{
+    font-size:28px;
+}
+
+.card p{
+    font-size:14px;
+}
+
+.card i{
+    font-size:45px;
+}
+}
+@media(max-width:700px){
+
+.rightTop{
+    gap:10px;
+}
+
+.topbar{
+    padding:0 15px;
+}
 }

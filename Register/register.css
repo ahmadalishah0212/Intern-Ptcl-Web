@@ -16,26 +16,49 @@ body{
 
 }
 
+html,
+body{
+    height:100%;
+}
 
-
-.container{
-
-    width:900px;
-    height:580px;
+body{
     background:white;
-    display:flex;
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
 
+.container-fluid{
+    padding:0;
+}
+
+.row{
+    margin:0;
+}
+
+.registerimg{
+    height:100vh;
+    padding:0;
+}
+
+.registerimg img{
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+}
+
+.registerBox{
+    width:100%;
+    max-width:500px;
+    padding:40px;
+}
+
+@media(max-width:991px){
+
+    .registerBox{
+        padding:30px;
+    }
 }
 
 
 
-
-.left{
-
-    width:45%;
-
-}
 
 .left img{
 
@@ -47,13 +70,7 @@ body{
 
 
 
-.right{
 
-    width:55%;
-    padding:40px;
-    text-align:center;
-
-}
 
 .logo{
 
@@ -277,27 +294,3 @@ input{
 
 
 
-@media(max-width:900px){
-
-.container{
-
-    width:95%;
-    height:auto;
-    flex-direction:column;
-
-}
-
-.left{
-
-    width:100%;
-    height:250px;
-
-}
-
-.right{
-
-    width:100%;
-
-}
-
-}
